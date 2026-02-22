@@ -29,3 +29,42 @@ Before you start building out the application, examine the current code and comp
 - Manage component state using the `useState` hook.
 - Keep components modular and reusable.
 - Remove unnecessary console logs and commented-out code before submission.
+# React Side Effects Lab
+
+A React app that fetches and displays random programming jokes using the `useEffect` hook.
+
+## Features
+- Fetches a programming joke on page load
+- Displays a loading message while waiting for the API
+- Allows fetching a new joke with a button click
+- Handles fetch errors gracefully
+
+## Setup
+
+### 1. Clone the repository
+\```bash
+git clone <your-repo-url>
+cd react-side-effects-vite
+\```
+
+### 2. Install dependencies
+\```bash
+npm install
+\```
+
+### 3. Start the development server
+\```bash
+npm run dev
+\```
+
+Open `http://localhost:5173` in your browser.
+
+## Running the Tests
+\```bash
+npm run test
+\```
+
+Tests verify:
+- Loading message displays before joke is loaded
+- Joke renders after fetch resolves
+- New Joke button fetches and displays a new joke

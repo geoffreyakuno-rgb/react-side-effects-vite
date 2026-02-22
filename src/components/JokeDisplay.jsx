@@ -1,12 +1,9 @@
-// Step 1: Accept `joke` and `loading` as props
+function JokeDisplay({ joke, loading }) {
+  if (loading) {
+    return <p>Loading...</p>
+  }
 
-const JokeDisplay = ({ joke, loading }) => {
-  return (
-    <div className="joke-container">
-      {/* Step 2: If `loading` is true, display "Loading..." */}
-      {/* Step 3: Otherwise, display the joke */}
-    </div>
-  )
+  return <p>{joke}</p>
 }
 
 export default JokeDisplay
